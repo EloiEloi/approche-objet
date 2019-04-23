@@ -4,20 +4,29 @@ public class Client {
 	int numeroCompte;
 	String nom;
 	String prenom;
-	
+	AdressePostale adresse;
 
-	public Client (int param1, String param2, String param3) {
-		
-		
-		
-		
-		
-		
-		
-		System.out.println("Nouvelle instance créée / " + " parametre 1 = " + param1 + " / parametre 2 = " + param2 + " / parametre 3 = " + param3);
-		
+	/**
+	 * @param numeroCompte
+	 * @param nom
+	 * @param prenom
+	 */
+	public Client(int numeroCompte, String nom, String prenom) {
+
+		this.numeroCompte = numeroCompte;
+		this.nom = nom;
+		this.prenom = prenom;
 	}
 
-	
-	
+	/**
+	 * @param numeroCompte
+	 * @param nom
+	 * @param prenom
+	 */
+	public Client(int numeroCompte, String nom, String prenom, AdressePostale adresse) {
+
+		this(numeroCompte, nom, prenom);
+		this.adresse = adresse;
+	}
+
 }

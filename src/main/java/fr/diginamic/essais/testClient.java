@@ -1,17 +1,19 @@
 package fr.diginamic.essais;
 
+import fr.diginamic.entites.AdressePostale;
 import fr.diginamic.entites.Client;
 
 public class testClient {
-	
-
-	
 
 	public static void main(String[] args) {
-		
-		Client c1 = new Client(10, "Turpin", "Eloi");
-		Client c2 = new Client(20, "Machin ", "bidule");
-		
+
+		AdressePostale adresse = new AdressePostale(130, "rue Beau Soleil", 44340, "Bouguenais");
+
+		Client c1 = new Client(10, "Turpin", "Eloi", adresse);
+		Client c2 = new Client(20, "Machin ", "bidule", adresse);
+
+		System.out.println(adresse.toString());
+
 	}
 
 }
