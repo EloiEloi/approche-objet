@@ -1,10 +1,10 @@
 package fr.diginamic.entites;
 
 public class Client {
-	int numeroCompte;
-	String nom;
-	String prenom;
-	AdressePostale adresse;
+	public int numeroCompte;
+	public String nom;
+	public String prenom;
+	public AdressePostale adresse;
 
 	/**
 	 * @param numeroCompte

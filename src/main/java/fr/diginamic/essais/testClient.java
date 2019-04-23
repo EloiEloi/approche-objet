@@ -12,7 +12,7 @@ public class testClient {
 		Client c1 = new Client(10, "Turpin", "Eloi", adresse);
 		Client c2 = new Client(20, "Machin ", "bidule", adresse);
 
-		System.out.println(adresse.toString());
+		System.out.println(c1.nom);
 
 	}
 

@@ -7,6 +7,8 @@ public class AdressePostale {
 	public int codePostal;
 	public String ville;
 
+	public static int nbDepartements = 101;
+
 	/**
 	 * @param numero
 	 * @param voie
