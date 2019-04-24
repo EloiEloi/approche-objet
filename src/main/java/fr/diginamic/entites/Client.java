@@ -29,4 +29,38 @@ public class Client {
 		this.adresse = adresse;
 	}
 
+	public String retournerPrenomMajuscule() {
+		return prenom.toUpperCase();
+
+	}
+
+	public String retournerNomMajuscule() {
+		return nom.toUpperCase();
+
+	}
+
+	public void modifierNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void modifierPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public void modifierNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
+	}
+
+	public String retournerNom() {
+		return nom;
+	}
+
+	public String retournerPrenom() {
+		return prenom;
+	}
+
+	public int retournerNumeroCompte() {
+		return numeroCompte;
+	}
+
 }

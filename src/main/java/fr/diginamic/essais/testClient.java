@@ -12,7 +12,10 @@ public class testClient {
 		Client c1 = new Client(10, "Turpin", "Eloi", adresse);
 		Client c2 = new Client(20, "Machin ", "bidule", adresse);
 
-		System.out.println(c1.nom);
+		c1.modifierNom("Mickey");
+		c1.modifierPrenom("mouse");
+
+		System.out.println(c1.retournerPrenom());
 
 	}
 
