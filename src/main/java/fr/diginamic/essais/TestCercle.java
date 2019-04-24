@@ -22,7 +22,8 @@ public class TestCercle {
 
 		Cercle cercle4 = new Cercle(10);
 		CercleService.doubler(cercle4);
-		System.out.println(cercle4.rayon);
+		System.out.println(cercle4.getRayon());
+
 	}
 
 }

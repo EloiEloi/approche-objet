@@ -1,8 +1,9 @@
 package fr.diginamic.operations;
 
 public class CalculMoyenne {
-	double[] tab;
-	int index = 0;
+
+	private double[] tab;
+	private int index = 0;
 
 	public CalculMoyenne(int longueur) {
 
