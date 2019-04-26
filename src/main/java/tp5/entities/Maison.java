@@ -1,6 +1,8 @@
 package tp5.entities;
 
-public class Maison {
+import tp6.ISurface;
+
+public class Maison implements ISurface {
 	Piece[] tabPiecesDansMaison = new Piece[0];
 
 	public void ajouterPiece(Piece... pieces) {
@@ -10,16 +12,13 @@ public class Maison {
 		for (int i = 0; i < tabPiecesDansMaison.length; i++) {
 			tabTemp[i] = tabPiecesDansMaison[i];
 		}
-
 		for (int i = tabPiecesDansMaison.length; i < tabTemp.length; i++) {
 			tabTemp[i] = pieces[i];
 		}
-
 		tabPiecesDansMaison = tabTemp;
-
 	}
 
-	public double getSuperficieTotale() {
+	public double calculerSurface() {
 		double maSuperficie = 0;
 		for (int i = 0; i < tabPiecesDansMaison.length; i++) {
 			maSuperficie += tabPiecesDansMaison[i].getSuperficie();

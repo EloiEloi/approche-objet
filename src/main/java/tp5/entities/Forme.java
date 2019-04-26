@@ -1,8 +1,8 @@
 package tp5.entities;
 
-public abstract class Forme {
+import tp6.ISurface;
 
-	public abstract double calculerSurface();
+public abstract class Forme implements ISurface {
 
 	public abstract double calculerPerimetre();
 

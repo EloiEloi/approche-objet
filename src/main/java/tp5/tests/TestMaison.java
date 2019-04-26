@@ -26,7 +26,7 @@ public class TestMaison {
 		Maison maison1 = new Maison();
 		maison1.ajouterPiece(salon1, chambre1, chambre2, chambre3, wc1, wc2, cuis1, sdb1, sdb2);
 
-		System.out.println(maison1.getSuperficieTotale());
+		System.out.println(maison1.calculerSurface());
 		System.out.println(maison1.getSuperficieParEtage(0));
 
 		System.out.println(maison1.getSuperficieParTypePiece("Wc"));
