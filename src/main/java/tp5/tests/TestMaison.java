@@ -24,7 +24,14 @@ public class TestMaison {
 		SalleDeBain sdb2 = new SalleDeBain(10, 1);
 
 		Maison maison1 = new Maison();
-		maison1.ajouterPiece(salon1, chambre1, chambre2, chambre3, wc1, wc2, cuis1, sdb1, sdb2);
+		maison1.ajouterPiece(chambre1);
+		maison1.ajouterPiece(chambre2);
+		maison1.ajouterPiece(chambre3);
+		maison1.ajouterPiece(wc1);
+		maison1.ajouterPiece(wc2);
+		maison1.ajouterPiece(cuis1);
+		maison1.ajouterPiece(sdb1);
+		maison1.ajouterPiece(sdb2);
 
 		System.out.println(maison1.calculerSurface());
 		System.out.println(maison1.getSuperficieParEtage(0));

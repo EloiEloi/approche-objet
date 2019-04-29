@@ -42,8 +42,8 @@ public class TestListeString {
 		// modification du contenu de la liste de manière à mettre tous les noms
 		// de villes en majuscules
 
-		for (String ville : listeVille) {
-			ville.toUpperCase();
+		for (int i = 0; i < listeVille.size(); i++) {
+			listeVille.set(i, listeVille.get(i).toUpperCase());
 		}
 
 		// suppression des villes de la liste, dont les noms commencent pas la
