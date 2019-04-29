@@ -53,23 +53,23 @@ public class TestPays {
 		// on modifie le contenu du hashset pour passer en minuscules le pays
 		// qui a le pib total plus petit
 
-		Pays paysPibTtotalMin = null;
-		long nbPaysPibTtotalMin = nbPaysPibtotalMax;
+		Pays paysPibTotalMin = null;
+		long nbPaysPibTotalMin = Long.MAX_VALUE;
 		monIt = monSetPays.iterator();
 		while (monIt.hasNext()) {
 			Pays monPays = monIt.next();
-			if (monPays.getPibParHab() * monPays.getNbHabitants() < nbPaysPibtotalMax) {
-				nbPaysPibTtotalMin = monPays.getPibParHab() * monPays.getNbHabitants();
-				paysPibTtotalMin = monPays;
+			if (monPays.getPibParHab() * monPays.getNbHabitants() < nbPaysPibTotalMin) {
+				nbPaysPibTotalMin = monPays.getPibParHab() * monPays.getNbHabitants();
+				paysPibTotalMin = monPays;
 
 			}
 
 		}
 
-		paysPibTtotalMin.setNom(paysPibTtotalMin.getNom().toUpperCase());
+		paysPibTotalMin.setNom(paysPibTotalMin.getNom().toUpperCase());
 
 		// on supprime le pays dont le pib total est le plus
-		monSetPays.remove(paysPibTtotalMin);
+		monSetPays.remove(paysPibTotalMin);
 
 		// on affiche l'ensemble
 
