@@ -1,6 +1,6 @@
 package sets;
 
-public class Pays {
+public class Pays implements Comparable<Pays> {
 
 	String nom;
 	long nbHabitants;
@@ -86,6 +86,18 @@ public class Pays {
 		if (pibParHab != other.pibParHab)
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Pays monPays) {
+
+		if (pibParHab > monPays.getPibParHab()) {
+			return 1;
+		} else if (pibParHab == monPays.getPibParHab()) {
+			return 0;
+		}
+
+		return -1;
 	}
 
 }
